@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nabeel Akram | Lead QA Automation Engineer</title>
+<meta name="description" content="Lead QA Automation Engineer with 7+ years in native iOS/Android automation, accessibility (WCAG), API and contract testing, and AI-assisted test selection for payments and SaaS platforms.">
+<meta property="og:title" content="Nabeel Akram | Lead QA Automation Engineer">
+<meta property="og:description" content="Native mobile test automation, accessibility and quality gates for payments and SaaS platforms.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF2EF; --surface:#FFFFFF; --ink:#16282B; --muted:#56696B;
+  --line:#CFD9D4; --pass:#17794A; --pass-soft:#DDF0E4; --console:#16282B; --console-ink:#E4ECE8;
+  --sans:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#101B1D; --surface:#172427; --ink:#E6EEEA; --muted:#9DB0AC;
+    --line:#2A3B3E; --pass:#4CC487; --pass-soft:#1C3A2C; --console:#0A1315; --console-ink:#D9E6E0;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#101B1D; --surface:#172427; --ink:#E6EEEA; --muted:#9DB0AC;
+  --line:#2A3B3E; --pass:#4CC487; --pass-soft:#1C3A2C; --console:#0A1315; --console-ink:#D9E6E0;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--pass);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+
+/* nav */
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+.mark{font-weight:800;text-decoration:none;letter-spacing:-.01em}
+nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center;padding:3.5rem 0 4.5rem}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);line-height:1.02;letter-spacing:-.035em;margin:0 0 1.25rem;font-weight:800}
+.role{font-size:1.2rem;font-weight:500;margin:0 0 1rem}
+.hero p.lede{color:var(--muted);max-width:34rem;margin:0 0 1.75rem}
+.status{display:inline-flex;align-items:center;gap:.5rem;background:var(--pass-soft);color:var(--pass);font-weight:600;font-size:.9rem;padding:.35rem .8rem;border-radius:999px;margin-bottom:1.5rem}
+.status::before{content:"";width:.5rem;height:.5rem;border-radius:50%;background:var(--pass)}
+.actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-1px)}
+
+/* the test run console: the one memorable element */
+.console{background:var(--console);color:var(--console-ink);border-radius:14px;padding:1.4rem 1.5rem 1.5rem;font-family:var(--mono);font-size:.84rem;line-height:1.75;box-shadow:0 24px 50px -28px rgba(22,40,43,.55);overflow-x:auto}
+.console .bar{display:flex;gap:.4rem;margin-bottom:1rem}
+.console .bar i{width:.7rem;height:.7rem;border-radius:50%;background:#3C4F52;display:block}
+.console .cmd{color:#9DB0AC}
+.console .suite{margin-top:.6rem;white-space:nowrap}
+.tag{background:#4CC487;color:#0A1315;font-weight:600;padding:0 .4rem;border-radius:3px;margin-right:.5rem}
+.console .t{padding-left:1.1rem;white-space:nowrap}
+.console .t b{color:#4CC487;font-weight:600;margin-right:.45rem}
+.console .sum{margin-top:1rem;padding-top:.8rem;border-top:1px solid #2A3B3E}
+.console .sum b{color:#4CC487}
+.console .line{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .js .console .line{opacity:0;animation:show .01s forwards}
+}
+@keyframes show{to{opacity:1}}
+
+/* sections */
+section{padding:4rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,3vw,2.2rem);letter-spacing:-.025em;margin:0 0 .5rem;font-weight:800}
+.intro{color:var(--muted);max-width:40rem;margin:0 0 2.5rem}
+
+/* numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.numbers div{border-left:3px solid var(--pass);padding-left:1rem}
+.numbers strong{display:block;font-size:2rem;letter-spacing:-.03em;line-height:1.1}
+.numbers span{color:var(--muted);font-size:.95rem}
+
+/* experience timeline */
+.job{display:grid;grid-template-columns:11rem 1fr;gap:2rem;padding:2rem 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.when{color:var(--muted);font-weight:500;font-size:.95rem}
+.job h3{margin:0;font-size:1.3rem;letter-spacing:-.015em}
+.job .co{margin:.1rem 0 1rem;color:var(--muted);font-weight:500}
+.proj{font-weight:700;margin:1.1rem 0 .4rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin:.35rem 0;max-width:68ch}
+.job li::marker{color:var(--pass)}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem 3rem}
+.skill h3{font-size:1.05rem;margin:0 0 .6rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chips span{background:var(--surface);border:1px solid var(--line);padding:.25rem .65rem;border-radius:6px;font-size:.9rem}
+
+/* education + certs */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.two h3{font-size:1.15rem;margin:0 0 .75rem}
+.two ul{margin:0;padding-left:1.1rem}
+.two li{margin:.4rem 0}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:18px;padding:3rem;margin:4rem 0 2rem}
+.contact h2{color:var(--paper)}
+.contact p{max-width:36rem;opacity:.85}
+.contact .actions .btn{border-color:var(--paper);color:var(--paper)}
+.contact .actions .btn.primary{background:var(--paper);color:var(--ink)}
+footer{color:var(--muted);font-size:.9rem;padding:0 0 2.5rem}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:2.5rem;padding-top:2rem}
+  .numbers{grid-template-columns:repeat(2,1fr)}
+  .job{grid-template-columns:1fr;gap:.4rem}
+  .skills,.two{grid-template-columns:1fr}
+  .contact{padding:2rem 1.5rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="mark" href="#top">Nabeel Akram</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <span class="status">Open to relocation to Dubai, UAE</span>
+      <h1>I test the apps people use to move money.</h1>
+      <p class="role">Lead QA Automation Engineer, Mobile Applications</p>
+      <p class="lede">7+ years building test automation for payments and SaaS platforms. I work across native iOS and Android, web, APIs and accessibility, and I set the quality gates that decide when a release is ready.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:nabeelakramsqa@gmail.com">Email me</a>
+        <a class="btn" href="Nabeel_Akram_CV.pdf" download>Download CV</a>
+        <a class="btn" href="https://www.linkedin.com/in/nabeel-akram-gcu" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="console" role="img" aria-label="Test run summary: 7 career results, all passed">
+      <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="line cmd">$ npx run career.spec --reporter=summary</div>
+      <div class="line suite"><span class="tag">PASS</span>iKhokha, card payments platform</div>
+      <div class="line t"><b>✓</b>native regression time cut by 35%</div>
+      <div class="line t"><b>✓</b>WCAG gaps cleared on 15+ merchant screens</div>
+      <div class="line t"><b>✓</b>CI feedback time cut by 30%</div>
+      <div class="line suite"><span class="tag">PASS</span>Veed.io, SaaS video editor</div>
+      <div class="line t"><b>✓</b>70%+ automation coverage, 60% faster runs</div>
+      <div class="line t"><b>✓</b>post-release defects down 30%</div>
+      <div class="line suite"><span class="tag">PASS</span>KUDO, real-time meetings</div>
+      <div class="line t"><b>✓</b>manual regression effort halved</div>
+      <div class="line t"><b>✓</b>QA sign-off from days to hours</div>
+      <div class="line sum">Tests: <b>7 passed</b>, 0 failed<br>Time: 7+ years</div>
+    </div>
+  </header>
+
+  <section aria-labelledby="impact">
+    <h2 id="impact">Impact in numbers</h2>
+    <p class="intro">Results from real production systems, not side projects.</p>
+    <div class="numbers">
+      <div><strong>7+ years</strong><span>in QA and test automation</span></div>
+      <div><strong>ZAR 20bn+</strong><span>yearly payments under test at iKhokha</span></div>
+      <div><strong>500+</strong><span>traceable test assets under quality gates</span></div>
+      <div><strong>10,000</strong><span>concurrent users in load tests</span></div>
+    </div>
+  </section>
+
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <p class="intro">From manual testing to leading mobile automation for a bank-owned payments company.</p>
+
+    <article class="job">
+      <div class="when">Nov 2023 – Present</div>
+      <div>
+        <h3>Lead QA Automation Engineer</h3>
+        <p class="co">iKhokha, a Nedbank Group company</p>
+        <p class="proj">Card Acquiring &amp; Merchant Payments Platform (24/7, PCI-DSS scope)</p>
+        <ul>
+          <li>Cut native regression time 35% with iOS automation in XCUITest and Prefire snapshots, and Android automation in Jetpack Compose Testing and Paparazzi, in Swift and Kotlin.</li>
+          <li>Cleared accessibility gaps across 15+ core merchant screens: WCAG checks, VoiceOver and TalkBack support, labels and contrast, validated against the Figma design system.</li>
+          <li>Cut CI feedback time 30% with a UI and API framework built from scratch in Java and Python, run in parallel on Jenkins and Sauce Labs device farms.</li>
+          <li>Set and enforced quality gates across feature teams, governing 500+ traceable test assets in Jira, Xray and AIO.</li>
+          <li>Caught integration risk at the pull request with REST and GraphQL automation, Pact contract tests and WireMock for vendor payment integrations.</li>
+          <li>Trimmed regression runtime 25% with Agentic AI and intelligent test selection, and mentored engineers on shift-left testing.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Nov 2021 – Oct 2023</div>
+      <div>
+        <h3>Senior QA Automation Engineer</h3>
+        <p class="co">Zazmic</p>
+        <p class="proj">Veed.io, SaaS video editing ($15M to $40M ARR)</p>
+        <ul>
+          <li>Moved release testing from manual-only to automation-first: 70%+ coverage of 50+ critical workflows, 60% faster runs, on a Cypress framework built from scratch in TypeScript.</li>
+          <li>Reduced post-release defects 30% with risk-based exploratory testing on fragile and recently changed areas.</li>
+          <li>Removed environment instability as a release blocker with production-like pre-prod environments and virtualised microservices in Docker.</li>
+        </ul>
+        <p class="proj">Multi-Cloud Pricing Validation Platform (AWS, Google Cloud, Azure)</p>
+        <ul>
+          <li>Reduced deployment failures 35% and feedback cycles 40% with API and system suites in Jenkins and GitHub Actions.</li>
+          <li>Migrated a legacy Protractor suite to Cypress with zero coverage loss: 30% more reliable, 45% faster.</li>
+        </ul>
+        <p class="proj">IPG Mediabrands (Interpublic Group, 130+ countries)</p>
+        <ul>
+          <li>Automated booking and room-management regression in Cypress, with coverage mapped to every user role.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Jun 2020 – Oct 2021</div>
+      <div>
+        <h3>Quality Assurance Engineer</h3>
+        <p class="co">Devsinc, Lahore</p>
+        <p class="proj">KUDO, real-time meeting platform (100+ languages, Fortune 500 users)</p>
+        <ul>
+          <li>Halved manual regression effort with Selenium WebDriver and JUnit automation.</li>
+          <li>Shortened QA sign-off from days to hours with smoke and regression runs in GitLab CI and Jenkins.</li>
+          <li>Removed a fifth of escaped defects by moving checks to the API layer with Postman, REST Assured and Cucumber BDD.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">Feb 2019 – May 2020</div>
+      <div>
+        <h3>Software Quality Assurance Engineer</h3>
+        <p class="co">Aomata, Lahore</p>
+        <ul>
+          <li>Cut response time 40% by running JMeter stress tests at 10,000 concurrent users and isolating bottlenecks.</li>
+          <li>Raised defect detection 18% by managing 300+ test cases per cycle in Jira and TestRail.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Skills</h2>
+    <p class="intro">The tools I use every week, grouped by the job they do.</p>
+    <div class="skills">
+      <div class="skill"><h3>Mobile testing</h3><div class="chips"><span>XCUITest</span><span>Jetpack Compose Testing</span><span>Appium</span><span>Snapshot testing (Prefire, Paparazzi)</span><span>Swift</span><span>Kotlin</span><span>Sauce Labs</span></div></div>
+      <div class="skill"><h3>Web automation</h3><div class="chips"><span>Playwright</span><span>Cypress</span><span>Selenium WebDriver</span><span>TestNG</span><span>JUnit</span><span>Cucumber (BDD)</span></div></div>
+      <div class="skill"><h3>API and contract testing</h3><div class="chips"><span>REST</span><span>GraphQL</span><span>REST Assured</span><span>Postman</span><span>Pact</span><span>WireMock</span><span>Swagger</span></div></div>
+      <div class="skill"><h3>Accessibility</h3><div class="chips"><span>WCAG</span><span>VoiceOver</span><span>TalkBack</span><span>Figma design systems</span><span>HTML and CSS</span></div></div>
+      <div class="skill"><h3>Languages</h3><div class="chips"><span>Java</span><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>Swift</span><span>Kotlin</span></div></div>
+      <div class="skill"><h3>CI/CD and AI-assisted QA</h3><div class="chips"><span>Jenkins</span><span>GitHub Actions</span><span>GitLab CI</span><span>Docker</span><span>Agentic AI test selection</span><span>Claude</span><span>GitHub Copilot</span></div></div>
+      <div class="skill"><h3>Process and quality</h3><div class="chips"><span>Quality gates</span><span>Risk-based testing</span><span>Shift-left and shift-right</span><span>Manual and exploratory testing</span><span>Jira, Xray, TestRail, AIO</span></div></div>
+      <div class="skill"><h3>Performance and cloud</h3><div class="chips"><span>JMeter</span><span>AWS</span><span>Google Cloud</span><span>Azure</span></div></div>
+    </div>
+  </section>
+
+  <section id="education" aria-labelledby="edu-h">
+    <div class="two">
+      <div>
+        <h2 id="edu-h">Education</h2>
+        <h3>BS in Computer Science</h3>
+        <p style="margin:0;color:var(--muted)">Government College University (GCU), Lahore<br>2014 – 2018</p>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <ul>
+          <li>ISTQB Certified Tester, Agile Tester (CTFL-AT)</li>
+          <li>Selenium WebDriver with Java, Basics to Advanced + Frameworks (Udemy)</li>
+          <li>The Complete JavaScript Course (Udemy)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact" id="contact">
+    <h2>Hiring for mobile or payments quality?</h2>
+    <p>I'm happy to talk about lead QA and SDET roles. I'm based in Lahore and open to relocating to Dubai.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:nabeelakramsqa@gmail.com">nabeelakramsqa@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/nabeel-akram-gcu" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/nabeelakramgcu" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <footer>© <span id="y">2026</span> Nabeel Akram</footer>
+</div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // One page-load moment: the test results print line by line.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js');
+    document.querySelectorAll('.console .line').forEach(function (el, i) {
+      el.style.animationDelay = (0.25 + i * 0.16) + 's';
+    });
+  }
+</script>
+</body>
+</html>
